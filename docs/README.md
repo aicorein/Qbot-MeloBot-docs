@@ -2,7 +2,7 @@
 home: true
 heroImage: /images/icon.png
 heroText: MeloBot
-tagline: 基于 go-cqhttp 前端，python 实现的 qbot
+tagline: 基于 go-cqhttp 前端，python 的 qbot 实现
 actionText: 阅读文档 →
 actionLink: /guide/intro/
 features:
