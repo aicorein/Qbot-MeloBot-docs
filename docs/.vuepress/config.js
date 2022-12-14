@@ -14,7 +14,6 @@ module.exports = {
         return moment(timestamp).fromNow();
       },
     },
-    "vuepress-plugin-flexsearch": true,
   },
   themeConfig: {
     smoothScroll: true,
