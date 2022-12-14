@@ -42,7 +42,7 @@ Hello World!
 
 输入 `$help` 可以查看现在可用的所有命令。使用 `$help#命令名` 可查看每个命令的功能、用法。
 
-## 进阶
+## 更多
 想要实现更多自定义的功能，建议阅读：
 
 <a :href="$withBase('/guide/mechanism')">MeloBot 简介 - 机制简述</a>
@@ -51,7 +51,7 @@ Hello World!
 
 <a :href="$withBase('/config/keyAnsConfig')">MeloBot 配置 - 关键词应答配置</a>
 
-<a :href="$withBase('/api/cmd')">MeloBot API</a>
+<a :href="$withBase('/api/cmd.html')">MeloBot API</a>
 
 <br>
 下一篇：

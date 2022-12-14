@@ -98,4 +98,4 @@ Encoder 编码后的这种格式，其实被称为“CQ 码”。
 
 <br>
 下一篇：
-<a :href="$withBase('/api/cmd')">MeloBot API</a>
+<a :href="$withBase('/api/cmd.html')">MeloBot API</a>
