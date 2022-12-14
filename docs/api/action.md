@@ -19,9 +19,9 @@ from utils.cmdInterface import Builder
 ### **Builder.build()**
 行为对象构造器构造方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def build(self, package: dict, isEcho=False) -> dict</code>
-</h4>
+</p>
 </div>
 
 - **package**：packer 返回的 package
@@ -45,9 +45,9 @@ from cmdInterface import msg_del_packer
 ### **msg_send_packer.pack()**
 消息发送打包器打包方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def pack(self, event: dict, cqEncodeMsgs: List[Union[str, dict]], isPureText: bool=False) -> dict</code>
-</h4>
+</p>
 </div>
 
 - **event**：事件对象
@@ -65,9 +65,9 @@ cqEncodeMsgs 列表中各条编码信息一定要采用相同的格式，比如�
 ### **msg_del_packer.pack()**
 消息撤回打包器打包方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def pack(self, msgId: int) -> dict</code>
-</h4>
+</p>
 </div>
 
 - **msgId**：消息 id，存在于事件对象的 `message_id` 键
@@ -87,9 +87,9 @@ from utils.actInterface import Encoder
 ### **Encoder.text()**
 文本消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def text(self, text: str, fromEvent: bool=True, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **text**：文本字符串
@@ -102,9 +102,9 @@ from utils.actInterface import Encoder
 ### **Encoder.face()**
 qq 表情消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def face(self, icon_id: int, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **icon_id**：qq 表情 id，请参考外链：<a :href="$withBase('https://github.com/kyubotics/coolq-http-api/wiki/%E8%A1%A8%E6%83%85-CQ-%E7%A0%81-ID-%E8%A1%A8')">表情 CQ 码 ID 表</a>
@@ -117,9 +117,9 @@ qq 表情消息编码方法
 ### **Encoder.record()**
 语音消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def record(self, url: str, timeout: int=None, magic: bool=False, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **url**：语音文件的 url
@@ -134,9 +134,9 @@ qq 表情消息编码方法
 ### **Encoder.at()**
 at 消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def at(self, qq:Union[int, Literal['all']], notInName: str=None, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **qq**：被 at 人的 qq 号，群内 at 所有人传入 "all"
@@ -150,9 +150,9 @@ at 消息编码方法
 ### **Encoder.share()**
 链接分享卡片消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def share(self, url: str, title: str, content: str=None, image: str=None, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **url**：链接地址
@@ -168,9 +168,9 @@ at 消息编码方法
 ### **Encoder.music()**
 音乐分享卡片消息编码方法（专有平台的音乐）
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def music(self, platType: Literal["qq", "163", "xm"], songId: str, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **platType**：平台类型，字面量，可选 "qq", "163", "xm"
@@ -184,9 +184,9 @@ at 消息编码方法
 ### **Encoder.custom_music()**
 自定义音乐分享卡片消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def custom_music(self, url: str, audio: str, title: str, content: str=None, image: str=None, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **url**：自定义音乐平台的主页或网站起始页
@@ -204,9 +204,9 @@ at 消息编码方法
 ### **Encoder.image()**
 图片消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def image(self, file: str, picType: Literal["flash", "show"]=None, subType: Literal[0, 1]=None, cache: Literal[0, 1]=1, mode: Literal["str", "dict"]="str")</code>
-</h4>
+</p>
 </div>
 
 - **file**：图片 url
@@ -222,9 +222,9 @@ at 消息编码方法
 ### **Encoder.reply()**
 回复消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def reply(self, messageId: int, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **messageId**：消息 id，应该存在于事件对象的 `messaage_id` 键
@@ -237,9 +237,9 @@ at 消息编码方法
 ### **Encoder.poke()**
 戳一戳消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def poke(self, qqId: int, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **qqId**：被戳人的 qq 号，应该存在于事件对象的 `user_id` 键
@@ -252,9 +252,9 @@ at 消息编码方法
 ### **Encoder.tts()**
 腾讯自带 tts 语音消息消息编码方法
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def tts(self, text: str, mode: Literal["str", "dict"]="str") -> Union[str, dict]</code>
-</h4>
+</p>
 </div>
 
 - **text**：需要被转为语音消息的文本

@@ -40,9 +40,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.sync_method()**
 同步命令方法装饰器
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def sync_method(self, alias: list=None, userLevel: ExeI.role=au.USER, lock: bool=False, prefix: bool=False, comment: str='', paramsTip: str='无说明')</code>
-</h4>
+</p>
 </div>
 
 - **alias**：命令方法的别称，字符串列表（命令也可以通过别称触发）
@@ -61,9 +61,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.async_method()**
 异步命令方法装饰器
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def async_method(self, alias: list=None, userLevel: ExeI.role=au.USER, lock: bool=False, prefix: bool=False, comment: str='', paramsTip: str='无说明')</code>
-</h4>
+</p>
 </div>
 
 - **alias**：命令方法的别称，字符串列表（命令也可以通过别称触发）
@@ -81,9 +81,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.call()**
 命令方法中调用其他命令
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">async def call(self, cmdName: str, event: dict, *args, **kwargs) -> dict</code>
-</h4>
+</p>
 </div>
 
 - **cmdName**：要调用的命令的名称
@@ -97,9 +97,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.get_cmd_alias()**
 获取其他命令的别称
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def get_cmd_alias(self, cmdName: str) -> list</code>
-</h4>
+</p>
 </div>
 
 - **cmdName**：要调用的命令的名称
@@ -111,9 +111,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.get_cmd_auth()**
 获取其他命令的权限限制值
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def get_cmd_auth(self, cmdName: str) -> ExeI.role</code>
-</h4>
+</p>
 </div>
 
 - **cmdName**：要调用的命令的名称
@@ -125,9 +125,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.get_cmd_comment()**
 获取其他命令的注释
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def get_cmd_comment(self, cmdName: str) -> str</code>
-</h4>
+</p>
 </div>
 
 - **cmdName**：要调用的命令的名称
@@ -139,9 +139,9 @@ from utils.cmdInterface import ExeI
 ### **ExeI.get_cmd_paramsTip()**
 获取其他命令的参数说明
 <div v-highlight class="code-space">
-<h4 class="code-header">
+<p class="code-header">
 <code class="Python code">def get_cmd_paramsTip(self, cmdName: str) -> str</code>
-</h4>
+</p>
 </div>
 
 - **cmdName**：要调用的命令的名称

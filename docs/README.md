@@ -3,8 +3,15 @@ home: true
 heroImage: /images/icon.png
 heroText: MeloBot
 tagline: 基于 go-cqhttp 前端，python 的 qbot 实现
-actionText: 阅读文档 →
-actionLink: /guide/intro/
+
+actions:
+- text: 获取发布
+  link: https://github.com/AiCorein/Qbot-MeloBot/releases
+  type: primary
+- text: 阅读文档 →
+  link: /guide/intro/
+  type: primary
+
 features:
 - title: 异步并发
   details: asyncio + threading 实现的多协程多线程调度，实现更高吞吐量的并发
@@ -13,8 +20,5 @@ features:
 - title: 人性化友好
   details: 拥有良好的反馈提示，任务超时自动取消，用户体验良好
 
+footer: 版权所有：2022 © AiCorein
 ---
-
-::: slot footer
-版权所有：2022 &copy; <a href="https://github.com/AiCorein">AiCorein</a>
-:::
