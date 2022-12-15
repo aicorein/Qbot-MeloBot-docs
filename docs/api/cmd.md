@@ -131,7 +131,7 @@ from utils.cmdInterface import ExeI
 </div>
 
 - **cmdName**：要调用的命令的名称
-- return：注释字符串（即命令方法装饰器中 commment 的值）
+- return：注释字符串（即命令方法装饰器中 comment 的值）
 
 
 
