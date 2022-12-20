@@ -2,14 +2,18 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { gitPlugin } from '@vuepress/plugin-git'
 
+
+let BASE = "/MeloBot/"
+let addBase = (url) => `${BASE}${url.replace(/^\//, "")}`
+
 export default {
-  title: "MeloBot 文档", // 设置网站标题
+  title: "MeloBot 文档",
   description: "基于 go-cqhttp，python 实现的 qbot",
-  base: "/MeloBot/", // 设置站点根路径
-  dest: "./ROOT", // 设置输出目录
+  base: BASE,
+  dest: "./ROOT",
   port: 8086,
   head: [
-    ["link", { rel: "icon", href: "/images/icon.png" }],
+    ["link", { rel: "icon", href: addBase("/images/icon.png") }],
     ["script", {
       async: "", 
       defer: "", 
