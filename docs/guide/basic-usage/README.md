@@ -31,7 +31,12 @@ websockets 是效率较高的全双工通信。因此当前版本 MeloBot 只支
 ## bot 的配置和启动
 依然是打开上面的 bot 配置文件。修改 `OWNER` 配置为你自己的 qq 号，然后把想要 bot 做出响应的 qq 群号加入到 `WHITE_GROUP_LIST` 列表中。
 
-配置完成后，运行 `main.py` 即可。当日志提示“与 cq 成功建立 websocket 连接”即代表已经成功建立通信，并开始正常工作。
+配置完成后，进行依赖模块的安装，在项目根目录下：
+```shell
+pip3 install -r requirements.txt
+```
+
+安装完成后，运行 `main.py` 即可。当日志提示“与 cq 成功建立 websocket 连接”即代表已经成功建立通信，并开始正常工作。
 
 ## 使用
 在白名单群聊或者与 bot 的好友聊天中输入：`$echo#Hello, Wrold!`，此时 bot 应该回复：
