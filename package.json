@@ -1,6 +1,6 @@
 {
   "name": "melobot-docs",
-  "version": "1.1.3",
+  "version": "v1",
   "description": "The documention of Qbot-MeloBot",
   "main": "index.js",
   "directories": {
