@@ -7,12 +7,14 @@ sidebar: auto
 ## go-cqhttp 的前置配置
 MeloBot 依赖于 go-cqhttp 作为前端接口。因此，你必须正确配置 go-cqhttp，才能使其与 MeloBot 协同工作。（推荐 go-cqhttp 版本 >= `v1.0.0` ）
 
-目前版本 MeloBot 对 go-cqhttp 的配置有以下特殊要求：
+目前 MeloBot 对 go-cqhttp 的配置有以下特殊要求：
 - 连接类型需是正向 websockets
 - 连接不开启密码加密
 - 上报类型 post-format 应该为 array
 
-在确认这些配置无误后，需要在 `./config/botConfig.toml` 的 bot 配置文件中，对应设置好 `CONNECT_HOST` 和 `CONNECT_PORT` 两个配置项。例如：
+在确认这些配置无误后，先运行一遍项目根目录的 `main.py`，然后程序会提示“未检测到配置文件，已自动生成，请填写配置后重启 bot”。
+
+然后找到位于 `./config/botConfig.toml` 的 bot 配置文件，对应设置好其中 `CONNECT_HOST` 和 `CONNECT_PORT` 两个配置项。例如：
 
 ```toml
 CONNECT_HOST = "localhost"
@@ -36,7 +38,11 @@ websockets 是效率较高的全双工通信。因此当前版本 MeloBot 只支
 pip3 install -r requirements.txt
 ```
 
-安装完成后，运行 `main.py` 即可。当日志提示“与 cq 成功建立 websocket 连接”即代表已经成功建立通信，并开始正常工作。
+安装完成后，再次运行 `main.py` 即可。当日志提示“与 cq 成功建立 websocket 连接”即代表已经成功建立通信，并开始正常工作。
+
+:::tip
+更多 bot 配置项请参考：<a :href="$withBase('/config/botConfig')">MeloBot 配置 - bot 配置</a>
+:::
 
 ## 使用
 在白名单群聊或者与 bot 的好友聊天中输入：`$echo#Hello, Wrold!`，此时 bot 应该回复：
@@ -45,14 +51,12 @@ pip3 install -r requirements.txt
 Hello World!
 ```
 
-输入 `$help` 可以查看现在可用的所有命令。使用 `$help#命令名` 可查看每个命令的功能、用法。
+输入 `$help` 可以查看现在可用的所有命令。使用 `$help#<命令名>` 可查看每个命令的功能、用法。
 
 ## 更多
 想要实现更多自定义的功能，建议阅读：
 
 <a :href="$withBase('/guide/mechanism')">MeloBot 简介 - 机制简述</a>
-
-<a :href="$withBase('/config/botConfig')">MeloBot 配置 - bot 配置</a>
 
 <a :href="$withBase('/config/keyAnsConfig')">MeloBot 配置 - 关键词应答配置</a>
 
