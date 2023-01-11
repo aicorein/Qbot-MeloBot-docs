@@ -15,12 +15,12 @@ export default {
   lang: 'zh-CN',
   head: [
     ["link", { rel: "icon", href: addBase("/images/icon.png") }],
-    ["script", {
-      async: "", 
-      defer: "", 
-      "data-website-id": "4c40e2c1-40b9-4cda-8236-a679d37e3a84",
-      src: "https://stats.glowmem.com/umami.js"
-    }]
+    // ["script", {
+    //   async: "", 
+    //   defer: "", 
+    //   "data-website-id": "4c40e2c1-40b9-4cda-8236-a679d37e3a84",
+    //   src: "https://stats.glowmem.com/umami.js"
+    // }]
   ],
   plugins: [
     backToTopPlugin(),
