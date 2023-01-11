@@ -3,7 +3,7 @@ import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { gitPlugin } from '@vuepress/plugin-git'
 
 
-let BASE = "/MeloBot/"
+let BASE = "/Qbot-MeloBot-docs/"
 let addBase = (url) => `${BASE}${url.replace(/^\//, "")}`
 
 export default {
