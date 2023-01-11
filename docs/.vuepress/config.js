@@ -12,6 +12,7 @@ export default {
   base: BASE,
   dest: "./ROOT",
   port: 8086,
+  lang: 'zh-CN',
   head: [
     ["link", { rel: "icon", href: addBase("/images/icon.png") }],
     ["script", {
