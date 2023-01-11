@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-844bb2f0","path":"/api/global.html","title":"全局对象","lang":"en-US","frontmatter":{},"headers":[],"filePathRelative":"api/global.md","git":{"createdTime":1670999271000,"updatedTime":1670999271000,"contributors":[{"name":"AiCorein","email":"1574260633@qq.com","commits":1}]}}');export{e as data};
