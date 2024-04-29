@@ -1,4 +1,4 @@
-let heroElem = document.querySelector(".hero");
+heroElem = document.querySelector(".hero");
 if (heroElem !== null) {
   let div = document.createElement("div");
   div.innerHTML = `
