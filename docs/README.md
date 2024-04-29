@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/icon.png
-heroText: MeloBot
+heroText: MeloBot v1
 tagline: 基于 go-cqhttp 前端，python 的 qbot 实现
 
 actions:
